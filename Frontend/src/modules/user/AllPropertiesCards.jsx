@@ -134,12 +134,12 @@ const AllPropertiesCards = ({ loggedIn }) => {
                 </div>
               </div>
               <div className="p-4 flex flex-col flex-1">
-                <div className="text-xs uppercase tracking-wide text-teal-700 font-semibold">
+                <div className="text-xs uppercase tracking-wide text-brand-700 font-semibold">
                   {TYPE_LABEL[property.propertyType]} · {AD_LABEL[property.propertyAdType]}
                 </div>
                 <h3 className="font-semibold text-lg mt-1 line-clamp-2">{property.propertyAddress}</h3>
                 {loggedIn ? (
-                  <div className="text-xl font-bold text-slate-900 mt-2">
+                  <div className="text-xl font-bold text-navy-900 mt-2">
                     {formatRupiah(property.propertyAmt)}
                     {property.propertyAdType === "rent" && <span className="text-sm font-normal text-slate-500"> /bulan</span>}
                   </div>

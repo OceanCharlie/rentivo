@@ -1,8 +1,34 @@
 @import "tailwindcss";
 
+/* Brand palette taken from public/rentivo-logo.png */
+@theme {
+  --color-brand-50: #e6f7f7;
+  --color-brand-100: #c2ecec;
+  --color-brand-200: #8fdcdd;
+  --color-brand-300: #57c8ca;
+  --color-brand-400: #22b2b4;
+  --color-brand-500: #009fa1;
+  --color-brand-600: #008a8c;
+  --color-brand-700: #007073;
+  --color-brand-800: #035a5c;
+  --color-brand-900: #064a4c;
+
+  --color-navy-50: #eef4f7;
+  --color-navy-100: #d6e2ea;
+  --color-navy-200: #adc4d3;
+  --color-navy-300: #7f9fb6;
+  --color-navy-400: #567c97;
+  --color-navy-500: #3a6079;
+  --color-navy-600: #2a4a60;
+  --color-navy-700: #1d384b;
+  --color-navy-800: #0f2c40;
+  --color-navy-900: #032233;
+  --color-navy-950: #01141f;
+}
+
 body {
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  background: #f8fafc;
-  color: #0f172a;
+  background: #f6f9fb;
+  color: var(--color-navy-900);
 }

@@ -34,14 +34,14 @@ const Login = () => {
           <Input.Password placeholder="••••••" />
         </Form.Item>
         <div className="text-right -mt-2 mb-4">
-          <Link to="/forgotpassword" className="text-teal-700">Lupa password?</Link>
+          <Link to="/forgotpassword" className="text-brand-700">Lupa password?</Link>
         </div>
         <Button type="primary" htmlType="submit" block loading={loading}>
           Login
         </Button>
       </Form>
       <p className="mt-6 text-center text-slate-500">
-        Belum punya akun? <Link to="/register" className="text-teal-700 font-medium">Daftar</Link>
+        Belum punya akun? <Link to="/register" className="text-brand-700 font-medium">Daftar</Link>
       </p>
     </AuthLayout>
   );

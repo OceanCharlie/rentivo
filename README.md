@@ -51,6 +51,9 @@ Frontend/src/
 Prasyarat: Node.js 18+ dan MongoDB (lokal atau Atlas).
 
 ```bash
+git clone https://github.com/OceanCharlie/rentivo.git
+cd rentivo
+
 # Backend
 cd Backend
 npm install
@@ -102,3 +105,7 @@ Base URL `http://localhost:8001`. Respons: `{ success, message, data }`.
 | POST | /api/admin/handlestatus | Admin | userid, status (granted/ungranted) |
 | GET | /api/admin/getallproperties | Admin | semua properti |
 | GET | /api/admin/getallbookings | Admin | semua booking |
+
+## Developer
+
+**Ocean** — [github.com/OceanCharlie/rentivo](https://github.com/OceanCharlie/rentivo)

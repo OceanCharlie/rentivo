@@ -44,7 +44,7 @@ const AddProperty = ({ onAdded }) => {
             beforeUpload={() => false}
             onChange={({ fileList: list }) => setFileList(list)}
           >
-            <p className="text-3xl text-teal-600"><InboxOutlined /></p>
+            <p className="text-3xl text-brand-600"><InboxOutlined /></p>
             <p>Klik atau seret foto ke sini</p>
           </Upload.Dragger>
         </Form.Item>

@@ -6,7 +6,7 @@ import p1 from "../../images/p1.jpg";
 import p2 from "../../images/p2.jpg";
 import p3 from "../../images/p3.jpg";
 import p4 from "../../images/p4.jpg";
-import Navbar from "./Navbar";
+import Navbar, { Logo } from "./Navbar";
 import AllPropertiesCards from "../user/AllPropertiesCards";
 import { UserContext, homePath } from "../../App";
 
@@ -41,10 +41,10 @@ const Home = () => {
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${currentIndex === idx ? "opacity-100" : "opacity-0"}`}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-900/85 via-navy-900/55 to-transparent" />
         <div className="relative max-w-7xl mx-auto px-6 h-full flex flex-col justify-center text-white">
           <h1 className="text-4xl md:text-6xl font-extrabold max-w-2xl leading-tight">
-            Sewa properti jadi lebih <span className="text-teal-300">mudah</span> & aman
+            Sewa properti jadi lebih <span className="text-brand-300">mudah</span> & aman
           </h1>
           <p className="text-lg md:text-xl text-slate-200 mt-4 max-w-xl">
             Rentivo menghubungkan penyewa dengan pemilik properti terverifikasi di seluruh Indonesia.
@@ -64,7 +64,7 @@ const Home = () => {
               key={idx}
               onClick={() => setCurrentIndex(idx)}
               aria-label={`Slide ${idx + 1}`}
-              className={`h-2 rounded-full transition-all ${currentIndex === idx ? "w-8 bg-teal-300" : "w-2 bg-white/60"}`}
+              className={`h-2 rounded-full transition-all ${currentIndex === idx ? "w-8 bg-brand-300" : "w-2 bg-white/60"}`}
             />
           ))}
         </div>
@@ -74,7 +74,7 @@ const Home = () => {
       <section className="max-w-7xl mx-auto px-6 -mt-12 relative z-10 grid md:grid-cols-3 gap-4 w-full">
         {features.map((f) => (
           <div key={f.title} className="bg-white rounded-xl shadow-lg p-6 flex gap-4">
-            <div className="text-2xl text-teal-600">{f.icon}</div>
+            <div className="text-2xl text-brand-600">{f.icon}</div>
             <div>
               <h3 className="font-semibold text-lg">{f.title}</h3>
               <p className="text-slate-500 text-sm">{f.text}</p>
@@ -92,8 +92,11 @@ const Home = () => {
         <AllPropertiesCards loggedIn={userData?.type === "Renter"} />
       </section>
 
-      <footer className="mt-auto border-t border-slate-200 bg-white py-6 text-center text-slate-500 text-sm">
-        © {new Date().getFullYear()} Rentivo. Semua hak dilindungi.
+      <footer className="mt-auto border-t border-slate-200 bg-white">
+        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-sm">
+          <Logo className="h-7" />
+          <span>© {new Date().getFullYear()} Rentivo. Semua hak dilindungi.</span>
+        </div>
       </footer>
     </div>
   );

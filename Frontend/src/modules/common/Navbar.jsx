@@ -5,10 +5,9 @@ import { LogoutOutlined } from "@ant-design/icons";
 import api from "../../api";
 import { UserContext, homePath } from "../../App";
 
-export const Logo = () => (
-  <Link to="/" className="flex items-center gap-2 text-2xl font-extrabold text-teal-700 no-underline">
-    <img src="/favicon.svg" alt="" className="w-8 h-8" />
-    Rentivo
+export const Logo = ({ className = "h-9" }) => (
+  <Link to="/" className="inline-flex items-center">
+    <img src="/logo.png" alt="Rentivo" className={`${className} w-auto`} />
   </Link>
 );
 
@@ -30,7 +29,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           {userData ? (
             <>
-              <Link to={homePath(userData)} className="hidden sm:block text-slate-600 hover:text-teal-700">
+              <Link to={homePath(userData)} className="hidden sm:block text-slate-600 hover:text-brand-700">
                 Halo, <b>{userData.name}</b> ({userData.type})
               </Link>
               <Button icon={<LogoutOutlined />} onClick={handleLogout}>
@@ -39,7 +38,7 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <Link to="/login" className="text-slate-700 hover:text-teal-700 font-medium px-2">
+              <Link to="/login" className="text-slate-700 hover:text-brand-700 font-medium px-2">
                 Login
               </Link>
               <Link to="/register">

@@ -48,7 +48,7 @@ const Register = () => {
         </Button>
       </Form>
       <p className="mt-6 text-center text-slate-500">
-        Sudah punya akun? <Link to="/login" className="text-teal-700 font-medium">Login</Link>
+        Sudah punya akun? <Link to="/login" className="text-brand-700 font-medium">Login</Link>
       </p>
     </AuthLayout>
   );

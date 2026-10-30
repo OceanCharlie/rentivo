@@ -6,7 +6,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ConfigProvider theme={{ token: { colorPrimary: '#0d9488', borderRadius: 8 } }}>
+    <ConfigProvider theme={{ token: { colorPrimary: '#009fa1', colorLink: '#008a8c', colorTextBase: '#032233', borderRadius: 8 } }}>
       <App />
     </ConfigProvider>
   </StrictMode>,

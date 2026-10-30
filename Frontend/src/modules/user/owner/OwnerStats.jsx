@@ -17,7 +17,7 @@ const OwnerStats = () => {
   return (
     <StatCards
       stats={[
-        { title: "Total Properti", value: properties.length, icon: <HomeOutlined />, color: "bg-teal-50 text-teal-600" },
+        { title: "Total Properti", value: properties.length, icon: <HomeOutlined />, color: "bg-brand-50 text-brand-600" },
         { title: "Properti Tersedia", value: count(properties, "isAvailable", "Available"), icon: <CheckCircleOutlined />, color: "bg-green-50 text-green-600" },
         { title: "Properti Dibooking", value: count(properties, "isAvailable", "Booked"), icon: <LockOutlined />, color: "bg-orange-50 text-orange-600" },
         { title: "Total Booking", value: bookings.length, icon: <CalendarOutlined />, color: "bg-sky-50 text-sky-600" },

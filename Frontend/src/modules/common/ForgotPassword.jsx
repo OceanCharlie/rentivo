@@ -64,7 +64,7 @@ const ForgotPassword = () => {
         </Form>
       )}
       <p className="mt-6 text-center text-slate-500">
-        Ingat password? <Link to="/login" className="text-teal-700 font-medium">Login</Link>
+        Ingat password? <Link to="/login" className="text-brand-700 font-medium">Login</Link>
       </p>
     </AuthLayout>
   );

@@ -19,7 +19,7 @@ const AdminStats = () => {
   return (
     <StatCards
       stats={[
-        { title: "Total Pengguna", value: users.length, icon: <TeamOutlined />, color: "bg-teal-50 text-teal-600" },
+        { title: "Total Pengguna", value: users.length, icon: <TeamOutlined />, color: "bg-brand-50 text-brand-600" },
         { title: "Owner Menunggu Persetujuan", value: count(users, (u) => u.type === "Owner" && u.granted !== "granted"), icon: <UserAddOutlined />, color: "bg-orange-50 text-orange-600" },
         { title: "Properti Tersedia", value: count(properties, (p) => p.isAvailable === "Available"), icon: <HomeOutlined />, color: "bg-green-50 text-green-600" },
         { title: "Properti Dibooking", value: count(properties, (p) => p.isAvailable === "Booked"), icon: <CheckCircleOutlined />, color: "bg-sky-50 text-sky-600" },
